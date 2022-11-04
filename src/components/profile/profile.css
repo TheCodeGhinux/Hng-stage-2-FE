@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.profile__con {
+    display: flex;
+    justify-content: center;
+    height: 13rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#profile__img {
+    /* height: 88px; */
+    width: 8rem;
+}
+
+#profile__img > img {
+    border-radius: 50%;
+}
+
+#twitter {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #101828;
+}
+
+#slack {
+    display: block;
+    visibility: hidden;
+}
+
+.modal__btn {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.modal__btn:hover, .modal__btn:focus {
+    background: #F9FAFB;
+}
+
+.mobile__modal__btn {
+    display: block;
+    visibility: hidden;
+}
+
+.links__section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link__tab {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    gap: 8px;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    width: 100%;
+    height: 76px;
+
+    background: #EAECF0;
+    /* Shadow/xs */
+
+    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+
+}
+
+.link__tab > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+}
+
+.link__tab > p:hover {
+    color: #e7332b;
+}
+
+
+.share__btn {
+    /* background: transparent; */
+    position: absolute;
+    top: 0;
+    /* right: 22rem; */
+    width: 1152px;
+}
+
+
+
+.tooltip {
+    position: relative;
+    /* right: 208px; */
+    left: 53rem;
+  }
+  
+
+ 
+  .tooltip .tooltiptext {
+    content: "";
+    position: absolute;
+    right: 80%;
+    margin-left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 10px solid #101828;
+    border-color: transparent transparent transparent #101828;
+    visibility: hidden;
+  }
+
+  .tooltip .tooltiptextt {
+    width: 120px;
+    background-color: #101828;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: -19px;
+    padding: 8px 12px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .share__btn {
+        right: 11rem;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+
+    #main {
+        width: 100%;
+    }
+    
+    .profile {
+        width: 90%;
+    }
+
+    .share__btn {
+        width: 100%;
+        right: 0;
+    }
+
+    .modal__btn {
+        display: block;
+        visibility: hidden;
+    }
+
+    .mobile__modal__btn {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px dashed #D0D5DD;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .tooltip {
+        left: auto;
+    }
+
+    .overlay {
+        top: 0;
+    }
+
+    .link__tab {
+        width: 81%;
+    }
+
+    .link__tab > p {
+        font-size: 14px;
+    }
+}
