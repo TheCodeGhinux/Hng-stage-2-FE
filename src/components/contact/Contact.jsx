@@ -13,12 +13,12 @@ const Contact = () => {
                 <div class="flex flex-col gap-6 md:flex-row">
                     <span className="flex flex-col content-start items-start">
                         <label htmlFor="last__name">First Name</label>
-                        <input type="name" id='first__name' className='input__con' />
+                        <input type="name" id='first_name' className='input__con' />
                     </span>
                     
                     <span className="flex flex-col content-start items-start text-start">
                         <label htmlFor="last__name">Last Name</label>
-                        <input type="name" id='last__name' className='input__con' />
+                        <input type="name" id='last_name' className='input__con' />
                     </span>
                 </div>
                 <div class=" flex flex-col text-start w-full mt-8 md:mt-auto">
@@ -35,7 +35,7 @@ const Contact = () => {
                     <label >You agree to providing your data to CodeGhinux who may contact you.</label>
                 </div>
 
-            <button type="submit" class=" w-full  text-white" id='btn__submit'>
+            <button type="submit" class=" w-full  text-white" id='btn_submit'>
                 Send message
             </button>
             </div>
